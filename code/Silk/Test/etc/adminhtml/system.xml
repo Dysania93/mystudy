@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!-- 该的system.xml是一个配置文件，它是用来建立在Magento系统配置配置字段。
+如果你的模块有一些管理员需要设置的设置，你将需要这个。
+可以去Store -> Setting -> Configuration看看它是什么样子。-->
+<!--要明白如何创建Tab，节，组和字段-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <!--
+        Tab元素可能有许多部分和一些主要属性和子：
+            Id属性是此选项卡的标识
+            sortOrder属性将定义此选项卡的位置。
+            translate属性让Magento知道哪个标题需要翻译
+            label元素child是将显示为选项卡标题的文本。(Label element child is the text which will show as tab title.)
+        -->
+        <tab id="Silk" translate="label" sortOrder="10">
+            <label>Silk</label>
+        </tab>
+        <!--
+            Section元素将具有id，sortOrder，translate属性，如Tab元素。
+            一些其他属性（showInDefault，showInWebsite，showInStore）
+            将决定此元素将显示在每个范围上还是不显示。
+        -->
+        <!--
+            该Section可能有许多组和一些其他子元素：
+            Class：此值将作为此元素的类添加。你应该你，如果你想化妆这个元素。
+            Label：此元素的文本标题
+            Tab：这是一个标签id。这个标签元素将让Magento知道这个部分属于哪个标签。此部分将放置在该选项卡下
+            Resource：定义ACL用户必须具有的ACL规则才能访问此配置。
+            Group：此元素可能有许多字段和一些属性，与节相同。
+            Fields：是此页面的主路径。它将保存我们要设置的数据。在这个元素中，我们专注于type属性。它将定义元素在显示时的方式。
+                它可以是：text，select，file ...
+            在本例中，我们创建了两个类型为select和text的字段。对于每个类型，我们将定义字段的子元素，使其工作，我们想要的。
+        -->
+        <section id="Test" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Hello World</label>
+            <tab>Silk</tab>
+            <resource>Silk_Test::hello_configuration</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General Configuration</label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Module Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="display_text" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Display Text</label>
+                    <comment>This text will display on the frontend.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

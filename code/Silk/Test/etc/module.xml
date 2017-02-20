@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+//要创建模块,都要创建如下内容
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    //module告诉magento我们要添加一个模块,name说明模块叫什么名,setup_version属性告诉Magento我们的模块的版本
+    //注:这个版本节点对Magento的设置资源/迁移系统很重要,但需要比较深入的知识点,暂时不学习
+    <module name="Silk_Test" setup_version="1.0.1.0" active="true" />
+</config>

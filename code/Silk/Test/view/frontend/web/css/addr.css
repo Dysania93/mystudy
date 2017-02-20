@@ -1,0 +1,338 @@
+form, input, textarea, file, button, select {
+    padding: 0px;
+    margin: 0px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    word-break: break-all;
+}
+
+h1, h2, h3, h4, h5, h6, div, p, img, label {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-size: 12px;
+}
+
+body {
+    font: 12px "Microsoft YaHei", "微软雅黑", "宋体", Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: #333;
+}
+
+
+input, textarea {
+    outline: none;
+}
+
+.pd10 {
+    padding: 10px;
+}
+
+.per_table {
+    margin: 20px 0;
+    line-height: 30px;
+    color: #666;
+}
+
+table {
+    font: 12px "Microsoft YaHei", "微软雅黑", "宋体", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    color: #3;
+}
+
+.th80 th {
+    width: 110px;
+}
+
+.per_table th {
+    font-weight: normal;
+    text-align: right;
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+.col_ee5b47 {
+    color: #ee5b47;
+}
+
+address, caption, cite, code, dfn, em, var, span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.per_table td {
+    padding: 5px 0;
+}
+
+.permy {
+    float: left;
+}
+
+.inpCom {
+    border: 1px solid #ccc;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 4px;
+    background-color: #fff;
+    color: #523669;
+}
+
+.w200 {
+    width: 200px;
+}
+
+.col_ee5b47 {
+    color: #ee5b47;
+}
+
+.posR {
+    position: relative;
+    z-index: 100;
+}
+
+.f_l {
+    float: left;
+}
+
+.mg_r10 {
+    margin-right: 10px;
+}
+
+.w120 {
+    width: 120px;
+}
+
+.J_select {
+    color: #999;
+    width: 100%;
+}
+
+.J_select span.sel_span {
+    display: block;
+    padding: 0 34px 0 5px;
+    height: 33px;
+    line-height: 33px;
+    color: #666;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    background: url(http://static4.biyao.com/pc/common/img/select.jpg?v=biyao_054dafd) no-repeat right center #fff;
+    cursor: pointer;
+}
+
+.J_select div.sel_div {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    display: none;
+}
+
+.J_select ul.sel_ul {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-width: 0 1px;
+    position: relative;
+}
+
+ul, ol, li, dl, dt, dd {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    list-style: none;
+    display: block;
+    font-size: 12px;
+}
+
+.J_select ul li {
+    padding-left: 5px;
+    color: #333;
+    cursor: pointer;
+    line-height: 22px;
+}
+
+.J_select .scr_com {
+    display: block;
+    z-index: 3000;
+}
+
+.scr_com {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 6px;
+    background: #D9DADC;
+    border: 1px solid #D4D5D7;
+    margin-left: 2px;
+    border-radius: 4px;
+}
+
+.scr_monsemove {
+    position: absolute;
+    width: 6px;
+    height: 40px;
+    top: 0px;
+    right: -1px;
+    background: #6E6E6F;
+    border: 1px solid #606162;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.w140 {
+    width: 140px;
+}
+
+.th80 th {
+    width: 110px;
+}
+
+.col_ee5b47 {
+    color: #ee5b47;
+}
+
+.per_table td {
+    padding: 5px 0;
+}
+
+.w380 {
+    width: 380px;
+}
+
+.col_ee5b47 {
+    color: #ee5b47;
+}
+
+.w200 {
+    width: 200px;
+}
+
+.checked .openIcon {
+    background: url(http://static.biyao.com/pc/common/img/commonSprite.png?v=biyao_1fc6adf) no-repeat -20px -80px;
+}
+
+.openIcon {
+    width: 15px;
+    height: 15px;
+    background: url(http://static4.biyao.com/pc/common/img/commonSprite.png?v=biyao_1fc6adf) no-repeat 0 -80px;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+i {
+    font-style: normal;
+}
+
+.btnH1 {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.btnBg2 {
+    background-color: #724A88;
+    border-radius: 3px;
+}
+
+.btnComS {
+    border: 0;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+}
+
+.btnCom1 {
+    height: 28px;
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 28px;
+}
+
+.w80 {
+    width: 80px;
+}
+
+a {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.th80 th {
+    width: 110px;
+}
+
+.per_table th {
+    font-weight: normal;
+    text-align: right;
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+.per_table td {
+    float:left;
+}
+
+
+
+
+.col_523 {
+    color: #523669;
+}
+
+.lineH24 {
+    line-height: 24px;
+}
+
+.perTableTitle1 {
+    height: 27px;
+    width: 100%;
+    text-align: center;
+    line-height: 27px;
+    color: #999;
+    background: #eee;
+}
+
+.per_list1 td {
+    text-align: center;
+    padding: 5px 0;
+    line-height: 28px;
+    border: 1px solid #eeecef;
+    border-collapse: collapse;
+}
+
+.per_list1 {
+    width: 100%;
+    line-height: 30px;
+    position: relative;
+    top: -1px;
+    border: 1px solid #eeecef;
+    border-collapse: collapse;
+}
+
+.table_address {
+    margin-left:60px;
+    width: 90%;
+}
+
+.col_link {
+    color: #07a6df;
+}

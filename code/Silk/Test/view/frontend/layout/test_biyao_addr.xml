@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd" layout="2columns-right">
+    <head>
+        //定义页面头部标题
+        <title>管理收货地址</title>
+        //引入web/css下的css文件,会自动生产css文件
+        <css src="Silk_Test::css/addr.css"/>
+    </head>
+
+    <body>
+        <referenceContainer name="content">
+            <block class="Silk\Test\Block\Addr" name="hello" template="addr.phtml">
+            </block>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+
+暂没实现填写默认值(以下代码实现的功能)
+
+
+system.xml中的每个字段在创建后将不会有任何值。
+当你调用它们，你会收到'null'的结果。所以对于模块，我们将需要设置字段的默认值，您将调用该值，而不必去配置，设置值并保存它。
+此默认值将保存在位于etc文件夹中的config.xml中。让我们为这个简单的配置创建它：
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <!--
+        您可以将<default>元素中的字段的路径设置为默认值。格式为：
+        <default>
+            <section>
+                <group>
+                    <field>{value}</field>
+                </group>
+            </section>
+        </default>
+    -->
+    <Silk>
+        <Test>
+            <general>
+                <enable>1</enable>
+                <display_text>Hello World</display_text>
+            </general>
+        </Test>
+    </Silk>
+</config>

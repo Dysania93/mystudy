@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--创建布局文件.xml
+//Area路径可以是frontend或adminhtml，它们定义将应用布局的位置。{module_root}/view/{area}/layout/
+//布局文件的名称格式为：{router_id}_{controller_name}_{action_name}.xml
+//当渲染页面时，Magento将检查布局文件以找到页面的句柄，然后加载块和模板
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <referenceContainer name="content">
+        <!--在布局文件中，我们定义模板Silk_Test::sayhello.phtml。
+        这意味着Magento会在模块Silk_Test的 templates文件夹中找到文件名sayhello.phtml
+        简单来说,block对应的一个phtml模板文件
+        -->
+        <block class="Silk\Test\Block\Display" name="index_display" template="Silk_Test::sayhello.phtml" />
+    </referenceContainer>
+</page>

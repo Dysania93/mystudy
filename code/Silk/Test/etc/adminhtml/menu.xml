@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <!--
+            menu.xml文件将定义一个“add”注释的集合，它将向Magento后端添加一个菜单项
+        -->
+        <!--
+            让我们解释一些属性：
+            该id属性是本说明的标识符。它是一个唯一的字符串，应该遵循格式：{Vendor_ModuleName} :: {menu_description}。
+            该title属性是将在菜单栏上显示的文字。
+            的module属性被定义此菜单是属于该模块。
+            的sortOrder属性被定义菜单的位置。下限值将显示在菜单顶部。
+            该parent属性是其他菜单节点的Id。它会告诉Magento这个菜单是另一个菜单的孩子。
+                在这个例子中，我们有parent =“Silk_Test :: hello”，所以我们知道这个菜单“Manage Items”是“Hello World”菜单的子菜单，
+                它将显示在Hello World菜单里面。
+            该action属性将定义此菜单链接到的页面的网址。如上所述，网址将遵循此格式{router_name} {controller_folder} {action_name}。
+                - 在此示例中，此菜单将链接到模块HelloWorld，控制器Hello和操作Index
+            该resource属性用于定义ACL用户必须具有的ACL规则才能查看和访问此菜单。我们将在其他主题中找到有关ACL的更多详细信息
+        -->
+        <add id="Silk_Test::helloworld" title="Hello World" module="Silk_Test" sortOrder="51" resource="Silk_Test::helloworld"/>
+        <add id="Silk_Test::post" title="Posts" module="Silk_Test" sortOrder="10" action="Silk_Test/post" resource="Silk_Test::post" parent="Silk_Test::helloworld"/>
+        <add id="Silk_Test::hello_configuration" title="Configuration" module="Silk_Test" sortOrder="99" parent="Silk_Test::helloworld" action="adminhtml/system_config/edit/section/helloworld" resource="Silk_Test::helloworld_configuration"/>
+    </menu>
+</config>

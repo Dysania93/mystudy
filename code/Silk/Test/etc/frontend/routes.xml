@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <!--
+        standard表示前端控制器路由
+        id属性是一个唯一的字符串，它将标识此路由。您将使用此字符串来声明此模块的操作的布局句柄
+        frontName属性也是一个唯一的字符串，将显示在url请求。例如，如果你声明一个这样的路由：
+    -->
+    <!--Use router 'standard' for frontend route-->
+    <router id="standard">
+        <!--Define a custom route with id and frontName-->
+        <route id="test" frontName="test">
+            <!--The module which this route match to-->
+            <module name="Silk_Test" before="Magento_Core"/>
+        </route>
+    </router>
+</config>
